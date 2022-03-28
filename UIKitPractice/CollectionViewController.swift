@@ -10,13 +10,7 @@ import UIKit
 private let reuseIdentifier = "Cell"
 
 class CollectionViewController: UICollectionViewController {
-    let positionNames = [
-        "top",
-        "jungle",
-        "middle",
-        "bottom",
-        "utility",
-    ]
+    
     let label = UILabel()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +26,7 @@ class CollectionViewController: UICollectionViewController {
         title = "👊Legue of Legends👊"
         collectionView.backgroundColor = .white
         view.addSubview(collectionView)
-        label.text = "Select a position"
+        label.text = "Select a champion"
         label.textColor = .blue
         label.font = UIFont.systemFont(ofSize: 40)
         view.addSubview(label)
@@ -54,7 +48,6 @@ class CollectionViewController: UICollectionViewController {
 
     // MARK: UICollectionViewDataSource
 
-
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
     }
@@ -63,18 +56,16 @@ class CollectionViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CollectionViewCell
         
         // Configure the cell
-        cell.imageView.image = UIImage(named: "position-\(positionNames[indexPath.item])")
+        cell.imageView.image = UIImage(named: "ezrealloadscreen.png")
         cell.layer.borderColor = CGColor(red: 0, green: 0, blue: 255, alpha: 1)
-        cell.layer.borderWidth = 2
-        cell.layer.cornerRadius = 30
-        cell.label.text = "\(positionNames[indexPath.item])"
+        cell.label.text = "ezreal"
         return cell
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath.item)
         let tvc = TableViewController()
-        tvc.name = "\(positionNames[indexPath.item]) Champions"
+        tvc.name = "Ezreal Skills"
         tvc.title = tvc.name
         let navi = UINavigationController(rootViewController: tvc)
         navigationController?.show(navi, sender: self)
@@ -84,6 +75,6 @@ class CollectionViewController: UICollectionViewController {
 
 extension CollectionViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-            return CGSize(width: 200, height: 200)
+            return CGSize(width: 200, height: 400)
     }
 }
