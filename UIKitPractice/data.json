@@ -1,0 +1,20 @@
+[
+    {
+        "id": 10001,
+        "name": "Ezreal",
+        "position": "Bottom",
+        "description": "Some Text",
+    },
+    {
+        "id": 10002,
+        "name": "Aatrox",
+        "position": "Top",
+        "description": "Some Text",
+    },
+    {
+        "id": 10003,
+        "name": "Vladimir",
+        "position": "Middle",
+        "description": "Some Text",
+    },
+]

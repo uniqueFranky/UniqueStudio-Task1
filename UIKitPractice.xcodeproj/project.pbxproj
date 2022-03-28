@@ -15,6 +15,8 @@
 		31ABB18627F1DB2300383917 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ABB18527F1DB2300383917 /* TableViewController.swift */; };
 		31ABB18827F1DB5000383917 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ABB18727F1DB5000383917 /* TableViewCell.swift */; };
 		31ABB18A27F1EDC000383917 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ABB18927F1EDC000383917 /* DetailViewController.swift */; };
+		31ABB18C27F1FFF100383917 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 31ABB18B27F1FFF100383917 /* data.json */; };
+		31ABB18E27F2015100383917 /* Champion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ABB18D27F2015100383917 /* Champion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		31ABB18527F1DB2300383917 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		31ABB18727F1DB5000383917 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		31ABB18927F1EDC000383917 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		31ABB18B27F1FFF100383917 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		31ABB18D27F2015100383917 /* Champion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Champion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +71,9 @@
 				31ABB18527F1DB2300383917 /* TableViewController.swift */,
 				31ABB18727F1DB5000383917 /* TableViewCell.swift */,
 				31ABB18927F1EDC000383917 /* DetailViewController.swift */,
+				31ABB18D27F2015100383917 /* Champion.swift */,
 				31ABB17627F07DED00383917 /* Assets.xcassets */,
+				31ABB18B27F1FFF100383917 /* data.json */,
 				31ABB17B27F07DED00383917 /* Info.plist */,
 			);
 			path = UIKitPractice;
@@ -132,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31ABB17727F07DED00383917 /* Assets.xcassets in Resources */,
+				31ABB18C27F1FFF100383917 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31ABB18E27F2015100383917 /* Champion.swift in Sources */,
 				31ABB18427F1B09A00383917 /* CollectionViewCell.swift in Sources */,
 				31ABB18627F1DB2300383917 /* TableViewController.swift in Sources */,
 				31ABB18227F1B06500383917 /* CollectionViewController.swift in Sources */,
