@@ -44,6 +44,11 @@ class TableViewController: UITableViewController {
         tableView.register(TableViewCell.self, forCellReuseIdentifier: "TableCell")
         tableView.rowHeight = 50
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("!!!\(indexPath.item)")
+        navigationController?.show(DetailViewController(), sender: self)
+    }
 
 }
 

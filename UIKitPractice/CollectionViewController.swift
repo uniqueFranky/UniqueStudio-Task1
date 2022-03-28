@@ -61,9 +61,8 @@ class CollectionViewController: UICollectionViewController {
         let tvc = TableViewController()
         tvc.name = "\(indexPath.item) th in CollectionView"
         tvc.title = tvc.name
-//        let navi = UINavigationController(rootViewController: tvc)
-//        navigationController?.show(navi, sender: self)
-        navigationController?.show(tvc, sender: self)
+        let navi = UINavigationController(rootViewController: tvc)
+        navigationController?.show(navi, sender: self)
     }
 
 }

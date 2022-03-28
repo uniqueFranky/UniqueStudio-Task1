@@ -30,12 +30,13 @@ class TableViewCell: UITableViewCell {
         label.adjustsFontForContentSizeCategory = true
         return label
     }()
+    
+
     func configureConstraints() {
         label.translatesAutoresizingMaskIntoConstraints = false
         let constraints = [
             label.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 30),
-            label.centerYAnchor.constraint(equalTo: centerYAnchor)
-//            label.trailingAnchor.constraint(equalTo: trailingAnchor),
+            label.centerYAnchor.constraint(equalTo: centerYAnchor),
         ]
         addConstraints(constraints)
     }

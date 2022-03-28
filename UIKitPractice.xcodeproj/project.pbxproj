@@ -9,25 +9,25 @@
 /* Begin PBXBuildFile section */
 		31ABB16E27F07DEC00383917 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ABB16D27F07DEC00383917 /* AppDelegate.swift */; };
 		31ABB17027F07DEC00383917 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ABB16F27F07DEC00383917 /* SceneDelegate.swift */; };
-		31ABB17227F07DEC00383917 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ABB17127F07DEC00383917 /* ViewController.swift */; };
 		31ABB17727F07DED00383917 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31ABB17627F07DED00383917 /* Assets.xcassets */; };
 		31ABB18227F1B06500383917 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ABB18127F1B06500383917 /* CollectionViewController.swift */; };
 		31ABB18427F1B09A00383917 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ABB18327F1B09A00383917 /* CollectionViewCell.swift */; };
 		31ABB18627F1DB2300383917 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ABB18527F1DB2300383917 /* TableViewController.swift */; };
 		31ABB18827F1DB5000383917 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ABB18727F1DB5000383917 /* TableViewCell.swift */; };
+		31ABB18A27F1EDC000383917 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ABB18927F1EDC000383917 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		31ABB16A27F07DEC00383917 /* UIKitPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31ABB16D27F07DEC00383917 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31ABB16F27F07DEC00383917 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		31ABB17127F07DEC00383917 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		31ABB17627F07DED00383917 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31ABB17B27F07DED00383917 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31ABB18127F1B06500383917 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		31ABB18327F1B09A00383917 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		31ABB18527F1DB2300383917 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		31ABB18727F1DB5000383917 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		31ABB18927F1EDC000383917 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +62,11 @@
 			children = (
 				31ABB16D27F07DEC00383917 /* AppDelegate.swift */,
 				31ABB16F27F07DEC00383917 /* SceneDelegate.swift */,
-				31ABB17127F07DEC00383917 /* ViewController.swift */,
 				31ABB18127F1B06500383917 /* CollectionViewController.swift */,
 				31ABB18327F1B09A00383917 /* CollectionViewCell.swift */,
 				31ABB18527F1DB2300383917 /* TableViewController.swift */,
 				31ABB18727F1DB5000383917 /* TableViewCell.swift */,
+				31ABB18927F1EDC000383917 /* DetailViewController.swift */,
 				31ABB17627F07DED00383917 /* Assets.xcassets */,
 				31ABB17B27F07DED00383917 /* Info.plist */,
 			);
@@ -145,10 +145,10 @@
 				31ABB18427F1B09A00383917 /* CollectionViewCell.swift in Sources */,
 				31ABB18627F1DB2300383917 /* TableViewController.swift in Sources */,
 				31ABB18227F1B06500383917 /* CollectionViewController.swift in Sources */,
-				31ABB17227F07DEC00383917 /* ViewController.swift in Sources */,
 				31ABB16E27F07DEC00383917 /* AppDelegate.swift in Sources */,
 				31ABB18827F1DB5000383917 /* TableViewCell.swift in Sources */,
 				31ABB17027F07DEC00383917 /* SceneDelegate.swift in Sources */,
+				31ABB18A27F1EDC000383917 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
