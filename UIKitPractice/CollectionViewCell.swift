@@ -23,7 +23,6 @@ class CollectionViewCell: UICollectionViewCell {
     var imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage()
-//        imageView.sizeToFit()
         imageView.contentMode = .scaleAspectFill
         return imageView
     }()
@@ -46,6 +45,7 @@ class CollectionViewCell: UICollectionViewCell {
             imageView.topAnchor.constraint(equalTo: topAnchor),
             imageView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -50),
             imageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 50),
+//            imageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -50),
             imageView.centerXAnchor.constraint(equalTo: centerXAnchor),
             
             label.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 5),

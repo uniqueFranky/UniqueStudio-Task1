@@ -22,7 +22,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.scrollDirection = .horizontal
         let vc = CollectionViewController(collectionViewLayout: flowLayout)
-        window?.rootViewController = vc
+        let navi = UINavigationController(rootViewController: vc)
+        window?.rootViewController = navi
         window?.makeKeyAndVisible()
     }
 

@@ -10,7 +10,6 @@ import UIKit
 private let reuseIdentifier = "Cell"
 
 class CollectionViewController: UICollectionViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -21,13 +20,12 @@ class CollectionViewController: UICollectionViewController {
         // Register cell classes
         self.collectionView!.register(CollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         // Do any additional setup after loading the view.
+        navigationController?.interactivePopGestureRecognizer?.isEnabled = false
+        title = "Test"
         collectionView.backgroundColor = .white
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(collectionView)
-        
         configureConstraints()
     }
-    
     func configureConstraints() {
         let constraints = [
             collectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 250),
@@ -35,6 +33,7 @@ class CollectionViewController: UICollectionViewController {
             collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
             collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
         ]
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
         view.addConstraints(constraints)
     }
 
@@ -56,7 +55,16 @@ class CollectionViewController: UICollectionViewController {
         cell.label.text = "Hello World!\(indexPath.item)"
         return cell
     }
-
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath.item)
+        let tvc = TableViewController()
+        tvc.name = "\(indexPath.item) th in CollectionView"
+        tvc.title = tvc.name
+//        let navi = UINavigationController(rootViewController: tvc)
+//        navigationController?.show(navi, sender: self)
+        navigationController?.show(tvc, sender: self)
+    }
 
 }
 
