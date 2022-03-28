@@ -47,7 +47,9 @@ class TableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("!!!\(indexPath.item)")
-        navigationController?.show(DetailViewController(), sender: self)
+        let dvc = DetailViewController()
+        dvc.title = "Detail for item \(indexPath.item) in \(title!)"
+        navigationController?.show(dvc, sender: self)
     }
 
 }
