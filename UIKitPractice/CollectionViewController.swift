@@ -22,7 +22,7 @@ class CollectionViewController: UICollectionViewController {
         // Register cell classes
         self.collectionView!.register(CollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         // Do any additional setup after loading the view.
-        navigationController?.interactivePopGestureRecognizer?.isEnabled = false
+        navigationController?.interactivePopGestureRecognizer?.isEnabled = true
         title = "👊Legue of Legends👊"
         collectionView.backgroundColor = .white
         view.addSubview(collectionView)
@@ -60,6 +60,7 @@ class CollectionViewController: UICollectionViewController {
         cell.imageView.image = UIImage(named: "\(champions[indexPath.item].name.lowercased())loadscreen.png")
         cell.layer.borderColor = CGColor(red: 0, green: 0, blue: 255, alpha: 1)
         cell.label.text = champions[indexPath.item].name
+        cell.positionImageView.image = UIImage(named: "position-\(champions[indexPath.item].position.lowercased())")
         return cell
     }
     
@@ -67,7 +68,8 @@ class CollectionViewController: UICollectionViewController {
         print(indexPath.item)
         let tvc = TableViewController()
         tvc.name = "\(champions[indexPath.item].name)"
-        tvc.title = tvc.name + "Skills"
+//        tvc.title = tvc.name + "'s Skills"
+        tvc.champion = champions[indexPath.item]
         let navi = UINavigationController(rootViewController: tvc)
         navigationController?.show(navi, sender: self)
     }

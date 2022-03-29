@@ -12,6 +12,7 @@ class CollectionViewCell: UICollectionViewCell {
         super.init(frame: frame)
         addSubview(imageView)
         addSubview(label)
+        addSubview(positionImageView)
         configureConstraints()
         
     }
@@ -27,6 +28,12 @@ class CollectionViewCell: UICollectionViewCell {
         return imageView
     }()
     
+    var positionImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage()
+        imageView.contentMode = .scaleAspectFill
+        return imageView
+    }()
     
     var label: UILabel = {
         let label = UILabel()
@@ -45,14 +52,19 @@ class CollectionViewCell: UICollectionViewCell {
             imageView.topAnchor.constraint(equalTo: topAnchor),
             imageView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -50),
             imageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 50),
-//            imageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -50),
             imageView.centerXAnchor.constraint(equalTo: centerXAnchor),
             
-            label.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 5),
+            label.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 20),
             label.centerXAnchor.constraint(equalTo: imageView.centerXAnchor),
+            label.bottomAnchor.constraint(equalTo: bottomAnchor),
+            positionImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
+            positionImageView.trailingAnchor.constraint(equalTo: label.leadingAnchor, constant: -30),
+            positionImageView.topAnchor.constraint(equalTo: label.topAnchor),
+            positionImageView.bottomAnchor.constraint(equalTo: label.bottomAnchor),
         ]
         imageView.translatesAutoresizingMaskIntoConstraints = false
         label.translatesAutoresizingMaskIntoConstraints = false
+        positionImageView.translatesAutoresizingMaskIntoConstraints = false
         addConstraints(constraints)
 
     }

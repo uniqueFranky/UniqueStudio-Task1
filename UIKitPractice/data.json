@@ -4,17 +4,169 @@
         "name": "Ezreal",
         "position": "Bottom",
         "description": "Some Text",
+        "skills":
+        [
+            {
+                "id": "Passive",
+                "name": "RISING SPELL FORCE",
+                "description": "Ezreal gains increasing Attack Speed each time he successfully hits a spell, stacking up to 5 times.",
+            },
+            {
+                "id": "Q",
+                "name": "MYSTIC SHOT",
+                "description": "Ezreal fires a damaging bolt of energy which reduces all of his cooldowns slightly if it strikes an enemy unit.",
+            },
+            {
+                "id": "W",
+                "name": "ESSENCE FLUX",
+                "description": "Ezreal fires an orb that sticks to the first champion or objective hit. If Ezreal hits an enemy with the orb, it detonates and deals damage.",
+            },
+            {
+                "id": "E",
+                "name": "ARCANE SHIFT",
+                "description": "Ezreal teleports to a target nearby location and fires a homing bolt which strikes the nearest enemy unit. Prioritizes enemies stuck with Essence Flux.",
+            },
+            {
+                "id": "R",
+                "name": "TRUESHOT BARRAGE",
+                "description": "Ezreal winds up before firing a powerful barrage of energy that deals massive damage to each unit it passes through (damage is reduced for minions and non-epic monsters).",
+            },
+        ],
     },
     {
         "id": 10002,
         "name": "Aatrox",
         "position": "Top",
         "description": "Some Text",
+        "skills":
+        [
+            {
+                "id": "Passive",
+                "name": "DEATHBRINGER STANCE",
+                "description": "Periodically, Aatrox's next basic attack deals bonus physical damage and heals him, based on the target's max health.",
+            },
+            {
+                "id": "Q",
+                "name": "THE DARKIN BLADE",
+                "description": "Aatrox slams his greatsword down, dealing physical damage. He can swing three times, each with a different area of effect.",
+            },
+            {
+                "id": "W",
+                "name": "INFERNAL CHAINS",
+                "description": "Aatrox smashes the ground, dealing damage to the first enemy hit. Champions and large monsters have to leave the impact area quickly or they will be dragged to the center and take the damage again.",
+            },
+            {
+                "id": "E",
+                "name": "UMBRAL DASH",
+                "description": "Passively, Aatrox heals when damaging enemy champions. On activation, he dashes in a direction.",
+            },
+            {
+                "id": "R",
+                "name": "WORLD ENDER",
+                "description": "Aatrox unleashes his demonic form, fearing nearby enemy minions and gaining attack damage, increased healing, and Move Speed. If he gets a takedown, this effect is extended.",
+            },
+        ],
     },
     {
         "id": 10003,
         "name": "Vladimir",
         "position": "Middle",
         "description": "Some Text",
+        "skills":
+        [
+            {
+                "id": "Passive",
+                "name": "CRIMSON PACT",
+                "description": "Every 30 points of bonus Health gives Vladimir 1 Ability Power and every 1 point of Ability Power gives Vladimir 1.6 bonus Health (does not stack with itself).",
+            },
+            {
+                "id": "Q",
+                "name": "TRANSFUSION",
+                "description": "Vladimir steals life from the target enemy. When Vladimir's resource is full, Transfusion will benefit from massively increased damage and healing for a brief time.",
+            },
+            {
+                "id": "W",
+                "name": "SANGUINE POOL",
+                "description": "Vladimir sinks into a pool of blood, becoming untargetable for 2 seconds. Additionally, enemies on the pool are slowed and Vladimir siphons life from them.",
+            },
+            {
+                "id": "E",
+                "name": "TIDES OF BLOOD",
+                "description": "Vladimir pays his own health to charge up a reservoir of blood which, when released, deals damage in the area around him but can be blocked by enemy units.",
+            },
+            {
+                "id": "R",
+                "name": "HEMOPLAGUE",
+                "description": "Vladimir infects an area with a virulent plague. Affected enemies take increased damage for the duration. After a few seconds, Hemoplague deals magic damage to infected enemies and heals Vladimir for each enemy Champion hit.",
+            },
+        ],
+    },
+    {
+        "id": 10004,
+        "name": "Graves",
+        "position": "Jungle",
+        "description": "Some Text",
+        "skills":
+        [
+            {
+                "id": "Passive",
+                "name": "NEW DESTINY",
+                "description": "Graves' shotgun has some unique properties. He must reload when he runs out of ammo. Attacks fire 4 bullets, which cannot pass through units. Non-champions struck by multiple bullets are knocked back.",
+            },
+            {
+                "id": "Q",
+                "name": "END OF THE LINE",
+                "description": "Graves fires an explosive shell that detonates after 2 seconds, or 0.2 seconds if it strikes terrain.",
+            },
+            {
+                "id": "W",
+                "name": "SMOKE SCREEN",
+                "description": "Graves fires a smoke canister at the target area creating a cloud of smoke that reduces sight range. Enemies caught in the initial impact are dealt magic damage and have their Move Speed reduced briefly.",
+            },
+            {
+                "id": "E",
+                "name": "QUICKDRAW",
+                "description": "Graves dashes forward gaining an Armor boost for several seconds. If Graves dashes towards an enemy champion, gain two stacks of True Grit instead. Hitting enemies with basic attacks lowers the cooldown of this skill and refreshes the resistance boost.",
+            },
+            {
+                "id": "R",
+                "name": "COLLATERAL DAMAGE",
+                "description": "Graves fires an explosive shell dealing heavy damage to the first champion it hits. After hitting a champion or reaching the end of its range, the shell explodes dealing damage in a cone.",
+            },
+        ],
+    },
+    {
+        "id": 10005,
+        "name": "Lux",
+        "position": "Utility",
+        "description": "Some Text",
+        "skills":
+        [
+            {
+                "id": "Passive",
+                "name": "ILLUMINATION",
+                "description": "Lux's damaging spells charge the target with energy for a few seconds. Lux's next attack ignites the energy, dealing bonus magic damage (depending on Lux's level) to the target.",
+            },
+            {
+                "id": "Q",
+                "name": "LIGHT BINDING",
+                "description": "Lux releases a sphere of light that binds and deals damage to up to two enemy units.",
+            },
+            {
+                "id": "W",
+                "name": "PRISMATIC BARRIER",
+                "description": "Lux throws her wand and bends the light around any friendly target it touches, protecting them from enemy damage.",
+            },
+            {
+                "id": "E",
+                "name": "LUCENT SINGULARITY",
+                "description": "Fires an anomaly of twisted light to an area, which slows nearby enemies. Lux can detonate it to damage enemies in the area of effect.",
+            },
+            {
+                "id": "R",
+                "name": "FINAL SPARK",
+                "description": "After gathering energy, Lux fires a beam of light that deals damage to all targets in the area. In addition, triggers Lux's passive ability and refreshes the Illumination debuff duration.",
+            },
+        ],
     },
 ]
