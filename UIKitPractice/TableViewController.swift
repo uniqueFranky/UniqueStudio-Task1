@@ -68,7 +68,7 @@ extension TableViewController: UITableViewDelegate, UITableViewDataSource {
         cell.label.text = "\(skill.id): \(skill.name)"
         cell.skill = skill
         cell.champName = champion!.name
-        
+
         cell.imageVieww.image = UIImage(named: "\(champion!.name.lowercased())_\(skill.id.lowercased()).png")
         cell.imageVieww.contentMode = .scaleAspectFill
         return cell
@@ -83,6 +83,7 @@ extension TableViewController: UITableViewDelegate, UITableViewDataSource {
         dvc.championName = champion!.name
         dvc.skillName = skill.name
         dvc.skillId = skill.id
+        tableView.deselectRow(at: indexPath, animated: true)
         navigationController?.show(dvc, sender: self)
     }
 }

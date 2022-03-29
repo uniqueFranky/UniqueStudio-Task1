@@ -18,6 +18,7 @@ class TableViewCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         addSubview(label)
         addSubview(imageVieww)
+        accessoryType = .disclosureIndicator
         configureConstraints()
     }
     
@@ -41,14 +42,14 @@ class TableViewCell: UITableViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         imageVieww.translatesAutoresizingMaskIntoConstraints = false
         let constraints = [
-            label.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 100),
+            label.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 70),
             label.centerYAnchor.constraint(equalTo: centerYAnchor),
             imageVieww.trailingAnchor.constraint(equalTo: label.leadingAnchor, constant: -30),
-            imageVieww.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 50),
+            imageVieww.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 30),
             imageVieww.topAnchor.constraint(equalTo: topAnchor, constant: 5),
             imageVieww.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -5)
         ]
         addConstraints(constraints)
     }
-
+    
 }
