@@ -34,26 +34,26 @@ class TableViewController: UIViewController{
         imageView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(imageView)
         
-//        let button = UIBarButtonItem(title: "返回", style: .plain, target: self, action: #selector(goBack))
-//        navigationItem.leftBarButtonItem = button
+        let button = UIBarButtonItem(title: "返回", style: .plain, target: self, action: #selector(goBack))
+        navigationItem.leftBarButtonItem = button
         
         let constraints = [
-            tableView.topAnchor.constraint(equalTo: view.topAnchor, constant: 400),
+            tableView.topAnchor.constraint(equalTo: view.topAnchor, constant: 300),
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             
             imageView.bottomAnchor.constraint(equalTo: tableView.topAnchor, constant: -20),
-            imageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
+            imageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 65),
             imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
         ]
         view.addConstraints(constraints)
     }
-//    @objc func goBack() {
-//        print("123")
-//        navigationController?.popViewController(animated: true)
-//    }
+    @objc func goBack() {
+        print("123")
+        navigationController?.dismiss(animated: true, completion: nil)
+    }
 }
 
 extension TableViewController: UITableViewDelegate, UITableViewDataSource {

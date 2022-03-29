@@ -51,7 +51,7 @@ class DetailViewController: UIViewController {
     var label: UILabel = {
         let label = UILabel()
         label.text = "Test"
-        label.textColor = .red
+        label.textColor = .brown
         label.numberOfLines = 0
         return label
     }()

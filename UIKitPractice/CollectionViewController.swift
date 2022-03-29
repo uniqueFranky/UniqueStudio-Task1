@@ -69,8 +69,8 @@ class CollectionViewController: UICollectionViewController {
         tvc.name = "\(champions[indexPath.item].name)"
 //        tvc.title = tvc.name + "'s Skills"
         tvc.champion = champions[indexPath.item]
-//        let navi = UINavigationController(rootViewController: tvc)
-        navigationController?.show(tvc, sender: self)
+        let navi = UINavigationController(rootViewController: tvc)
+        navigationController?.show(navi, sender: self)
     }
 
 }
