@@ -34,20 +34,26 @@ class TableViewController: UIViewController{
         imageView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(imageView)
         
+//        let button = UIBarButtonItem(title: "返回", style: .plain, target: self, action: #selector(goBack))
+//        navigationItem.leftBarButtonItem = button
+        
         let constraints = [
-            tableView.topAnchor.constraint(equalTo: view.topAnchor, constant: 200),
+            tableView.topAnchor.constraint(equalTo: view.topAnchor, constant: 400),
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            
             imageView.bottomAnchor.constraint(equalTo: tableView.topAnchor, constant: -20),
-            imageView.topAnchor.constraint(equalTo: view.topAnchor),
+            imageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
             imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
         ]
         view.addConstraints(constraints)
     }
-
-
+//    @objc func goBack() {
+//        print("123")
+//        navigationController?.popViewController(animated: true)
+//    }
 }
 
 extension TableViewController: UITableViewDelegate, UITableViewDataSource {
@@ -74,6 +80,9 @@ extension TableViewController: UITableViewDelegate, UITableViewDataSource {
         let skill = champion!.skills[indexPath.item]
         dvc.title = "Detail for \(skill.name)"
         dvc.label.text = skill.description
+        dvc.championName = champion!.name
+        dvc.skillName = skill.name
+        dvc.skillId = skill.id
         navigationController?.show(dvc, sender: self)
     }
 }
