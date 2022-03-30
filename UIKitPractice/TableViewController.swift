@@ -82,6 +82,7 @@ extension TableViewController: UITableViewDelegate, UITableViewDataSource {
         dvc.championName = champion!.name
         dvc.skillName = skill.name
         dvc.skillId = skill.id
+        dvc.videoable = skill.videoable
         tableView.deselectRow(at: indexPath, animated: true)
         navigationController?.show(dvc, sender: self)
     }
