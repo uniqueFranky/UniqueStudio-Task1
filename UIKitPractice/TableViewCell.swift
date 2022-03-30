@@ -8,10 +8,6 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
     var skill: Skill!
     var champName: String!
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {

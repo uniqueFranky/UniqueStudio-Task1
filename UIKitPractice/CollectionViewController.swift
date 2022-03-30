@@ -35,7 +35,7 @@ class CollectionViewController: UICollectionViewController {
     func configureConstraints() {
         let constraints = [
             collectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 200),
-            collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -200),
+            collectionView.bottomAnchor.constraint(equalTo: collectionView.topAnchor, constant: 450),
             collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
             collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
             label.bottomAnchor.constraint(equalTo: collectionView.topAnchor, constant: -30),
@@ -57,7 +57,6 @@ class CollectionViewController: UICollectionViewController {
         
         // Configure the cell
         cell.imageView.image = UIImage(named: "\(champions[indexPath.item].name.lowercased())loadscreen.png")
-        cell.layer.borderColor = CGColor(red: 0, green: 0, blue: 255, alpha: 1)
         cell.label.text = champions[indexPath.item].name
         cell.positionImageView.image = UIImage(named: "position-\(champions[indexPath.item].position.lowercased())")
         return cell

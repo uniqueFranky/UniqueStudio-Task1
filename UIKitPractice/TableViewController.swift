@@ -51,7 +51,6 @@ class TableViewController: UIViewController{
         view.addConstraints(constraints)
     }
     @objc func goBack() {
-        print("123")
         navigationController?.dismiss(animated: true, completion: nil)
     }
 }
@@ -79,7 +78,7 @@ extension TableViewController: UITableViewDelegate, UITableViewDataSource {
         let dvc = DetailViewController()
         let skill = champion!.skills[indexPath.item]
         dvc.title = "Detail for \(skill.name)"
-        dvc.label.text = skill.description
+//        dvc.label.text = skill.description
         dvc.championName = champion!.name
         dvc.skillName = skill.name
         dvc.skillId = skill.id
