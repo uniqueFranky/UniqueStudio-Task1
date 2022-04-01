@@ -11,3 +11,11 @@
 
 ## 3.30 Wednesday
  * 添加了技能视频介绍，播放后可以自动关闭视频界面
+
+## 3.31 Thursday
+ * 摸了
+ 
+ ## 4.1 Friday
+ * git和homebrew之前用过，就了解了一下CocoaPods， [Reference](https://blog.csdn.net/qq_27597629/article/details/98743873)
+ * 试了一下Debug View Hierarchy
+ * 第一期任务基本完成了

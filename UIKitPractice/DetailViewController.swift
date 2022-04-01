@@ -77,6 +77,7 @@ class DetailViewController: UIViewController {
         label.numberOfLines = 0
         return label
     }()
+    
     let playerViewController = AVPlayerViewController()
 
     @objc func loadMovie() {
